@@ -41,6 +41,9 @@ L.control.scale({
     imperial: false,
 }).addTo(map);
 
+// Rainviewer Plugin
+L.control.rainviewer().addTo(map);
+
 // Wetterstationen
 async function loadStations(url) {
     let response = await fetch(url);
