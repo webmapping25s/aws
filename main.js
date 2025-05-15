@@ -154,7 +154,7 @@ function showDirection(jsondata) {
             return L.marker(latlng, {
                 icon: L.divIcon({
                     className: "aws-div-icon-wind",
-                    html: `<span style="background-color:${color}">${feature.properties.WR.toFixed(0)}</span>`,
+                    html: `<span ><i style="transform:rotate(${feature.properties.WR}deg);color:${color}" class="fa-solid fa-circle-arrow-down"></i></span>`,
                 })
             })
         },
